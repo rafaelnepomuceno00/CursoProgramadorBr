@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+    <script>
+        onload = function() {
+            let a = localStorage.getItem('texto')
+            let h1 = document.getElementById('text')
+
+            h1.innerHTML = a
+
+        }
+
+        function atualiza(elemento) {
+            let valor = elemento.value
+            console.log(valor)
+            let h1 = document.getElementById('text')
+
+            h1.innerHTML = valor
+
+            localStorage.setItem('texto', valor)
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1 id=text> Teste </h1>
+    <input type="text" oninput="atualiza(this)">
+</body>
+
+</html>
