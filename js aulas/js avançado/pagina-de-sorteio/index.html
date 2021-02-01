@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="PT-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteadores</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+    <script>
+        function sortearNum() {
+            let total = 100
+            let escolhido = Math.round(Math.random() * total)
+            let h1 = document.getElementById('num')
+            h1.innerText = escolhido
+        }
+
+        function sortearPess() {
+            let pessoas = ['Rafael', 'Cristina', 'Amanda', 'Marcos', 'Clara']
+            let total = pessoas.length
+            let sorteado = Math.floor(Math.random() * total)
+            let h1 = document.getElementById('pess')
+            h1.innerText = pessoas[sorteado]
+        }
+    </script>
+</head>
+
+<body>
+    <p>Sorteador de Números</p>
+    <h1 id="num"></h1>
+    <button onclick="sortearNum()"> Sortear </button>
+    <br>
+    <br>
+    <p>Sorteador de Pessoas</p>
+    <h1 id="pess"></h1>
+    <button onclick="sortearPess()"> Sortear </button>
+
+</body>
+
+</html>

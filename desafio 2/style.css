@@ -1,0 +1,53 @@
+body {
+    padding: 50px;
+    background-color: black;
+}
+
+#container {
+    background-image: url(backgorund.png);
+    background-size: cover;
+    width: 400px;
+    height: 200px;
+}
+
+h1 {
+    font-size: 18pt;
+    font-family: Courier;
+    font-weight: 500;
+}
+
+#card {
+    padding: 5px;
+    padding-left: 20px;
+}
+
+ul {
+    margin-left: 5px;
+}
+
+li {
+    font-family: Courier;
+    font-size: 12pt;
+    line-height: 10px;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:visited {
+    color: black;
+}
+
+#l1 {
+    list-style-image: url(Insta.png);
+}
+
+#l2 {
+    list-style-image: url(Twitter.png);
+}
+
+#l3 {
+    list-style-image: url(Youtube.png);
+}

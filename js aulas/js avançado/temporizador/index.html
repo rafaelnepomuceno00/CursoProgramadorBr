@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="PT-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporizador</title>
+    <script>
+        var num1 = 0
+        var num2 = 0
+        var delay
+        var repeticao
+
+        function aumentar() {
+
+            let h1 = document.getElementById('t1')
+            h1.innerHTML += ' ' + num1
+            num1++
+        }
+
+        function aumentar2() {
+
+            let h1 = document.getElementById('t2')
+            h1.innerHTML += ' ' + num2
+            num2++
+        }
+
+        function iniciarRepeticao() {
+
+            repeticao = setInterval(aumentar2, 1000)
+        }
+
+        function pararRepeticao() {
+            clearInterval(repeticao)
+        }
+
+        function iniciarDelay() {
+
+            delay = setTimeout(aumentar, 1000)
+        }
+
+        function pararDelay() {
+            clearTimeout(delay)
+        }
+    </script>
+</head>
+
+<body style="text-align: center;">
+    <h1 id="t1">Contando</h1>
+    <input onclick="iniciarDelay()" type="submit" value="Iniciar">
+    <input onclick="pararDelay()" type="submit" value="Parar">
+    <h1 id="t2">Contando</h1>
+    <input onclick="iniciarRepeticao()" type="submit" value="Iniciar">
+    <input onclick="pararRepeticao()" type="submit" value="Parar">
+</body>
+
+</html>
