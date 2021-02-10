@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+</head>
+
+<body>
+
+    <h1 style="user-select: none;">Teste</h1>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $('h1').click(() => {
+            changecolor()
+        })
+
+        function changecolor() {
+            let color = Math.floor(Math.random() * 16777215).toString(16)
+            console.log(color)
+            $('h1').css("color", `#${color}`)
+        }
+    </script>
+</body>
+
+</html>
