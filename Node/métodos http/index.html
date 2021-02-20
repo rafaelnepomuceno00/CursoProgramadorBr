@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+</head>
+
+<body>
+    <button onclick="Get()">Get</button>
+    <button onclick="Post()">Post</button>
+    <button onclick="Put()">Put</button>
+    <button onclick="Delete()">Delete</button>
+
+    <script>
+        const url = 'http://localhost:3000/teste'
+        function Get() {
+            fetch(url, {
+                method: 'get'
+            }).then(res => {
+                console.log(res)
+            }).catch(err => {
+
+                console.log(err)
+
+            })
+        }
+        function Post() {
+            fetch(url, {
+                method: 'post'
+            }).then(res => {
+                console.log(res)
+            }).catch(err => {
+
+                console.log(err)
+
+            })
+        }
+        function Put() {
+            fetch(url, {
+                method: 'put'
+            }).then(res => {
+                console.log(res)
+            }).catch(err => {
+
+                console.log(err)
+
+            })
+        }
+        function Delete() {
+            fetch(url, {
+                method: 'delete'
+            }).then(res => {
+                console.log(res)
+            }).catch(err => {
+
+                console.log(err)
+
+            })
+        }
+    </script>
+</body>
+
+</html>
