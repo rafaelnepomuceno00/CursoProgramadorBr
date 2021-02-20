@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Título</title>
+    <style>
+        .btn {
+            display: inline-block;
+            background-color: purple;
+            padding: 10px;
+            margin: 10px;
+            width: 150px;
+            text-align: center;
+            cursor: pointer;
+        }
+        
+        .a {
+            display: inline-block;
+            background-color: greenyellow;
+            padding: 10px;
+            margin: 10px;
+            width: 150px;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body onload="loaded()">
+    <h1> Digite a baixo</h1>
+
+    <input id="text" type="text" oninput="change1(this)">
+    <br>
+    <div class="btn" onclick="onClique(this)" onmouseover="mouseIn(this)" onmouseout="mouseOut(this)">
+        Passe mouse
+
+    </div>
+    <br>
+    <div class='a' id='btn2'>
+        Clique aqui
+    </div>
+    <h1 id="teste">teste</h1>
+</body>
+
+</html>
