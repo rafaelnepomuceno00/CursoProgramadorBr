@@ -1,6 +1,5 @@
 const http = require('http')
 
-<<<<<<< HEAD
 http.createServer((request, response) => {
 
     //madnando apenas tipo texto
@@ -19,10 +18,4 @@ http.createServer((request, response) => {
     if (err) { console.log(err) }
 
     console.log('Servidor rodando na porta 3000')
-=======
-http.createServer((request, response)=>{
-
-
-    
->>>>>>> 0bfd67ebf51cdfa50c903cc55bcc59976011cea9
 })
